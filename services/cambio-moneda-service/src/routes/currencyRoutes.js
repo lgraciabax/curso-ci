@@ -35,7 +35,6 @@ router.get('/convert-to-cop',(req, res) =>{
     // conversion a Pesos colombianos
     const factorConversion = 0.0043;
     const convertedAmount = amount / factorConversion;
-    console.log("Iniciaste conversio a Pesos Colombianos")
 
     res.json({ convertedAmount });
 });
