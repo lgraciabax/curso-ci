@@ -30,4 +30,14 @@ router.get('/convert-to-usd', (req, res) => {
 });
 
 
+router.get('/convert-to-cop',(req, res) =>{
+    const { amount } = req.query;
+    // conversion a Pesos colombianos
+    const factorConversion = 0.0043;
+    const convertedAmount = amount / factorConversion;
+    console.log("Iniciaste conversio a Pesos Colombianos")
+
+    res.json({ convertedAmount });
+});
+
 module.exports = router;
