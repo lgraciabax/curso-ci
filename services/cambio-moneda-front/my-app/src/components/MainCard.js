@@ -8,9 +8,14 @@ function MainCard() {
         <h5 className="card-title">Conversor</h5>
         <p className="card-text">Ingresa una cantidad.</p>
         <div className="row">
-          <CurrencyConverterCard moneda="Dólares" tasa={0.051} />
-          <CurrencyConverterCard moneda="Euros" tasa={0.045} />
-          <CurrencyConverterCard moneda="Quetzales" tasa={0.39} />
+          <CurrencyConverterCard moneda="Dólares" />
+          <CurrencyConverterCard moneda="Euros" />
+          <CurrencyConverterCard moneda="Quetzales" />
+          <CurrencyConverterCard moneda="Yenes" />
+          <CurrencyConverterCard moneda="Libra" />
+          <CurrencyConverterCard moneda="Rupia" />
+          <CurrencyConverterCard moneda="Yuan" />
+          <CurrencyConverterCard moneda="Peso Colombiano" />
         </div>
       </div>
     </div>
