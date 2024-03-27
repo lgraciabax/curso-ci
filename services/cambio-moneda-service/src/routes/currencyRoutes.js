@@ -10,13 +10,28 @@ router.get('/convert-to-libra', (req, res) => {
     convertedAmount = amount * 0.04; // 1 peso = 0.04 libras
     res.json({ amount, from, to: 'libras', convertedAmount })
 });
+
 router.get('/convert-to-quetzales', (req, res) => {
     const { amount } = req.query;
-   
-    const factorConversion = 0.47;
+
+
+    const factorConversion = 0.44;
+
     const convertedAmount = amount * factorConversion;
+
+    res.json({ amount, to: 'CNY', convertedAmount });
+});
+
+router.get('/convert-to-yuan', (req, res) => {
+    const { amount } = req.query;
+
+
+    const factorConversion = 0.44;
+
+    const convertedAmount = amount * factorConversion;
+
    
-    res.json({  convertedAmount })
+    res.json({  convertedAmount });
 });
 //Este es USD
 router.get('/convert-to-euros', (req, res) => {
