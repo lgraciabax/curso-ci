@@ -156,6 +156,7 @@ function MainCard() {
           <CurrencyConverterCard moneda="Rupia" resultado={resultadoRupia} />
           <CurrencyConverterCard moneda="Yuan" resultado={resultadoYuan} />
           <CurrencyConverterCard moneda="Pesos Colombiano" resultado={resultadoPesoColombiano} />
+
         </div>
       </div>
     </div>
@@ -163,3 +164,4 @@ function MainCard() {
 }
 
 export default MainCard;
+
