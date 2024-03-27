@@ -10,7 +10,7 @@ router.get('/convert-to-quetzales', (req, res) => {
    
     res.json({  convertedAmount });
 });
-
+//Este es USD
 router.get('/convert-to-euros', (req, res) => {
     const { amount } = req.query;
     
@@ -19,11 +19,20 @@ router.get('/convert-to-euros', (req, res) => {
    
     res.json({  convertedAmount });
 });
-
+//Este es EUR
 router.get('/convert-to-usd', (req, res) => {
     const { amount } = req.query;
     
     const factorConversion = 17.91;
+    const convertedAmount = amount / factorConversion;
+   
+    res.json({  convertedAmount });
+});
+
+router.get('/convert-to-yen', (req, res) => {
+    const { amount } = req.query;
+    
+    const factorConversion = 0.11;
     const convertedAmount = amount / factorConversion;
    
     res.json({  convertedAmount });
