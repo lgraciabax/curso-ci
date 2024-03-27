@@ -29,5 +29,15 @@ router.get('/convert-to-usd', (req, res) => {
     res.json({  convertedAmount });
 });
 
+router.get('/convert-to-rupees',(req,res) => {
+    const {amount} = req.query;
+
+    const factorConversion = 5.04;
+    const convertedAmount = amount*factorConversion;
+
+    res.json({ convertedAmount })
+
+});
+
 
 module.exports = router;
