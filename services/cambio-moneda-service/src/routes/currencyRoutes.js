@@ -4,7 +4,7 @@ const currencyController = require('../controllers/currencyController');
 
 
 router.get('/convert-to-libra', (req, res) => {
-    const amount = req.query;
+    const {amount} = req.query;
     // Realiza la conversión a dólares estadounidenses (USD)
     const factorConversion = 0.04;
     convertedAmount = amount * 0.04; // 1 peso = 0.04 libras
